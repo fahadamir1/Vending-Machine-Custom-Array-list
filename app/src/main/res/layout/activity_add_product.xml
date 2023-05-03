@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_product">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="529dp"
+        android:fontFamily="@font/bold"
+        android:text="Add Product"
+        android:textColor="#F52B4B"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="287dp"
+        android:layout_height="354dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-91dp"
+        android:layout_marginEnd="-101dp"
+        android:src="@drawable/asset_2"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="80dp">
+
+        <EditText
+            android:id="@+id/prdtitle"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:ems="15"
+            android:hint="Enter product Title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/prdquantity"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/prdtitle"
+            android:ems="15"
+
+            android:hint="Enter product quantity"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/prdprice"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_below="@id/prdquantity"
+            android:ems="15"
+            android:hint="Enter product Price"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/prddescriptoin"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_below="@id/prdprice"
+            android:ems="15"
+            android:hint="Enter product Description 1 line"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/prdimg"
+            android:layout_width="50dp"
+            android:scaleType="fitXY"
+            android:layout_height="50dp"
+            android:layout_below="@id/prddescriptoin"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prdimg"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/bold"
+            android:text="Add Product" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
